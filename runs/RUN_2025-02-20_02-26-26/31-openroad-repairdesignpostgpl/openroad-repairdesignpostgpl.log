@@ -1,0 +1,101 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/lroot/count/runs/RUN_2025-02-20_02-26-26/27-openroad-globalplacement/counter_8bit.odb'…
+Reading design constraints file at '/nix/store/1713bzlk8w8z17prigcs0xh0ha523ii5-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 2
+[INFO] Setting input delay to: 2
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 1 input buffers.
+[INFO RSZ-0028] Inserted 16 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |       434
+       10 |       9 |       0 |             0 |       424
+       20 |      18 |       0 |             0 |       414
+       30 |      27 |       0 |             0 |       404
+       40 |      37 |       0 |             0 |       394
+       50 |      46 |       0 |             0 |       384
+       60 |      56 |       0 |             0 |       374
+       70 |      66 |       0 |             0 |       364
+       80 |      75 |       0 |             0 |       354
+       90 |      84 |       0 |             0 |       344
+      100 |      94 |       0 |             0 |       334
+      110 |     104 |       0 |             0 |       324
+      120 |     114 |       0 |             0 |       314
+      130 |     124 |       0 |             0 |       304
+      140 |     134 |       0 |             0 |       294
+      150 |     144 |       0 |             0 |       284
+      160 |     154 |       0 |             0 |       274
+      170 |     164 |       0 |             0 |       264
+      180 |     174 |       0 |             0 |       254
+      190 |     184 |       0 |             0 |       244
+      200 |     194 |       0 |             0 |       234
+      210 |     204 |       0 |             0 |       224
+      220 |     214 |       0 |             0 |       214
+      230 |     224 |       0 |             0 |       204
+      240 |     234 |       0 |             0 |       194
+      250 |     244 |       0 |             0 |       184
+      260 |     254 |       0 |             0 |       174
+      270 |     264 |       0 |             0 |       164
+      280 |     274 |       0 |             0 |       154
+      290 |     284 |       0 |             0 |       144
+      300 |     293 |       0 |             0 |       134
+      310 |     303 |       0 |             0 |       124
+      320 |     310 |       0 |             0 |       114
+      330 |     319 |       1 |             1 |       104
+      340 |     328 |       1 |             1 |        94
+      350 |     335 |       2 |             2 |        84
+      360 |     344 |       2 |             2 |        74
+      370 |     353 |       3 |             3 |        64
+      380 |     360 |       4 |             4 |        54
+      390 |     367 |       4 |             5 |        44
+      400 |     375 |       5 |             6 |        34
+      410 |     381 |       6 |             7 |        24
+      420 |     406 |      27 |            12 |        14
+      430 |     436 |      55 |            16 |         4
+    final |     437 |      55 |            16 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 2 slew violations.
+[INFO RSZ-0035] Found 14 fanout violations.
+[INFO RSZ-0038] Inserted 55 buffers in 16 nets.
+[INFO RSZ-0039] Resized 437 instances.
+Placement Analysis
+---------------------------------
+total displacement       1029.5 u
+average displacement        1.6 u
+max displacement            7.9 u
+original HPWL           11849.1 u
+legalized HPWL          12521.2 u
+delta HPWL                    6 %
+
+[INFO DPL-0020] Mirrored 211 instances
+[INFO DPL-0021] HPWL before           12521.2 u
+[INFO DPL-0022] HPWL after            12208.3 u
+[INFO DPL-0023] HPWL delta               -2.5 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                62     232.72
+  Tap cell                                 99     123.87
+  Timing Repair Buffer                     72     427.91
+  Inverter                                 18      67.56
+  Sequential cell                           8     205.20
+  Multi-Input combinational cell          389    2999.13
+  Total                                   648    4056.39
+Writing OpenROAD database to '/home/lroot/count/runs/RUN_2025-02-20_02-26-26/31-openroad-repairdesignpostgpl/counter_8bit.odb'…
+Writing netlist to '/home/lroot/count/runs/RUN_2025-02-20_02-26-26/31-openroad-repairdesignpostgpl/counter_8bit.nl.v'…
+Writing powered netlist to '/home/lroot/count/runs/RUN_2025-02-20_02-26-26/31-openroad-repairdesignpostgpl/counter_8bit.pnl.v'…
+Writing layout to '/home/lroot/count/runs/RUN_2025-02-20_02-26-26/31-openroad-repairdesignpostgpl/counter_8bit.def'…
+Writing timing constraints to '/home/lroot/count/runs/RUN_2025-02-20_02-26-26/31-openroad-repairdesignpostgpl/counter_8bit.sdc'…

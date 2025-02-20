@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/lroot/count/runs/RUN_2025-02-20_02-26-26/43-openroad-detailedrouting/or_metrics_out.json /nix/store/1713bzlk8w8z17prigcs0xh0ha523ii5-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/openroad/drt.tcl

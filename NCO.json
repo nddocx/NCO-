@@ -1,0 +1,6 @@
+{
+  "DESIGN_NAME": "counter_8bit",
+  "VERILOG_FILES": "dir::count.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PRIOD": 10
+}
