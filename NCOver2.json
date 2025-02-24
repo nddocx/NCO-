@@ -3,21 +3,21 @@
   "VERILOG_FILES": ["dir::counter.v", "dir::ram256x16.v"],
   "CLOCK_PORT": "clk",
   "CLOCK_PERIOD": 10,
+  "DESIGN_IS_CORE": true,
   "FF_SIZING": "absolute",
   "DIE_AREA": "0 0 560 370",
+  "PL_TARGET_DENSITY": 0.5,
   "VDD_NETS": "vccd1",
   "GND_NETS": "vssd1",
-  "PDN_MACRO_CONNECTIONS": ["mem_i vccd1 vssd1 vccd1 vssd1"],
-  "RUN_MAGIC_DRC": false,
-  "RUN_KLAYOUT_DRC": false,
-  "RUN_LVS":false,
+  "FP_PDN_MACRO_HOOKS": ["mem_i vccd1 vssd1 vccd1 vssd1"],
   "MAGIC_DRC_USE_GDS": false,
+  "RUN_KLAYOUT_XOR": false,
   "GTR_ANTENNA_ITERS": 10,
   "MACROS": {
     "ram256x16": {
       "instances": {
         "mem_i": {
-          "location": ["50","50"],
+          "location": ["20", "120"],
           "orientation": "N"
         }
       },
@@ -25,6 +25,8 @@
       "lef": ["dir::ram256x16/ram256x16.lef"],
       "lib": {}
     }
-  }
+  },
+  
+  "QUIT_ON_MAGIC_DRC": false
 }
 
